@@ -1,0 +1,29 @@
+Plugin 'gmarik/vundle'
+
+" original repos on github
+Plugin 'vim-scripts/Auto-Pairs'
+Plugin 'vim-scripts/snipMate'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'jez/vim-colors-solarized'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+" A whole set of text objects
+" Plugin 'wellle/targets.vim'
+
+
+
+" vim-scripts repos
+Plugin 'minibufexpl.vim'
+
+
+
+" non-github repos(local)
+" Plugin 'git://git.wincent.com/command-t.git'
+

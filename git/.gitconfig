@@ -1,0 +1,26 @@
+[user]
+    name = Haibo Chen
+    email = haibochen@apache.org
+[core]
+    excludesfile = ~/.gitignore
+    whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+    editor = vim
+    pager = less -FRX
+[help]
+    # Automatically correct and execute mistyped commands
+    autocorrect = 1
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[apply]
+    # Detect whitespace errors when applying a patch
+    whitespace = fix
+[alias]
+    # Get to a detached HEAD state on purpose! Usage: `git detach [REF]`
+    detach = !sh -c 'git checkout $(git rev-parse ${1:-HEAD})' --
+    sha1 = !sh -c 'git rev-parse --short ${1:-HEAD}' --
+    stash-all = stash save --include-untracked
+[status]
+    showUntrackedFiles = all

@@ -1,0 +1,6 @@
+Host *
+	IdentityFile 	%d/.ssh/%u_at_linkedin.com_ssh_key
+
+Host *linkedin.com
+    PermitLocalCommand yes
+    LocalCommand phook -e 'echo "\033]50;SetProfile=Remote\a"' -a 'echo "\033]50;SetProfile=Default\a"'

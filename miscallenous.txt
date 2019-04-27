@@ -1,0 +1,14 @@
+Career advice:
+1) work on company-wide influential projects
+2) work proactively on problems in need of resources
+3) ask for promotion, ask for advice
+4) talk with folks to get different perspectives
+5) find a good mentor
+
+
+
+Think of the test plan of a feature In decreasing order of priority:
+1) No regression
+2) Functionalities
+3) Guard against erroneous configuration, extreme cases  
+4) Stress/Scale tests (nothing breaks, guards actually work)
