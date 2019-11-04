@@ -1,0 +1,4 @@
+{
+    // see setup instructions for vs code in a remote container
+    "docker.host": "tcp://localhost:23750"
+}

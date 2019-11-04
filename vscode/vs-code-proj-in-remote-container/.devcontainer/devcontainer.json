@@ -1,0 +1,23 @@
+{
+    //"dockerFile": "Dockerfile",
+    "image": "node",
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "src=/home/hachen/Documents/git/tensorflow,dst=/workspace,type=bind",
+    "settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true
+	},
+    "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "ms-vscode.go",
+        "vscjava.vscode-java-pack",
+        "dbaeumer.vscode-eslint",
+        "shd101wyy.markdown-preview-enhanced",
+        "ms-python.python",
+        "donjayamanne.githistory",
+        "eamodio.gitlens"
+    ]
+}
