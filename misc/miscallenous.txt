@@ -10,5 +10,5 @@ Career advice:
 Think of the test plan of a feature In decreasing order of priority:
 1) No regression
 2) Functionalities
-3) Guard against erroneous configuration, extreme cases  
+3) Guard against erroneous configuration, extreme cases
 4) Stress/Scale tests (nothing breaks, guards actually work)

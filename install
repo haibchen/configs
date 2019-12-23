@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+if [[ $(uname -s) == "Darwin" ]] ; then
+    ./scripts/macos/install.sh
+    ./scripts/platform-agnostic.sh
+    ./scripts/macos/post-install.sh
+else
+    ./scripts/rhel7/install.sh
+    ./scripts/platform-agnostic.sh
+    ./scripts/rhel7/post-install.sh
+fi
+

@@ -8,7 +8,7 @@ if [[ $(uname -s) == "Darwin" ]] ; then
         LAST_EXIT_CODE=$?
         CMD=$(fc -ln -1)
         # No point in waiting for the command to complete
-        osascript ~/.notif.scpt "$CMD" "$LAST_EXIT_CODE" &
+        osascript ~/.bash/notif.scpt "$CMD" "$LAST_EXIT_CODE" &
     }
     export PS1='$(f_notifyme)'$PS1
 fi
@@ -29,12 +29,12 @@ function histgrep {
     n_lines="$1"
     shift
   fi
-  grep "$@" ~/.full_history | tail -n "$n_lines"
+  grep "$@" ~/.bash/.full_history | tail -n "$n_lines"
 }
 
 
 function frequency {
-  cat ~/.bash_history | perl ~/.frequency.pl | sort -rn
+  cat ~/.bash_history | perl ~/.bash/frequency.pl | sort -rn
 }
 
 
@@ -42,11 +42,29 @@ function frequency {
 # command in a file.
 promptFunc() {
 echo "$(date +%Y-%m-%d--%H-%M-%S) $(hostname) $PWD $(history 1)" \
-  >> ~/.full_history
+  >> ~/.bash/.full_history
 }
 
-
 PROMPT_COMMAND=promptFunc
+
+
+# Append to the history file, don't overwrite it
+shopt -s histappend
+
+# Save multi-line commands as one command
+shopt -s cmdhist
+
+# Don't record some commands
+export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear:pwd"
+
+# Use standard ISO 8601 timestamp
+# %F equivalent to %Y-%m-%d
+# %T equivalent to %H:%M:%S (24-hours format)
+HISTTIMEFORMAT='%F %T '
+#********************************* BASH HISTORY ************************************************
+
+
+
 
 ## GENERAL OPTIONS ##
 
@@ -54,8 +72,7 @@ PROMPT_COMMAND=promptFunc
 shopt -s checkwinsize
 
 # Automatically trim long paths in the prompt (requires Bash 4.x)
-PROMPT_DIRTRIM=2
-
+PROMPT_DIRTRIM=3
 
 # Turn on recursive globbing (enables ** to recurse all directories)
 shopt -s globstar 2> /dev/null
@@ -92,23 +109,6 @@ then
     bind '"\e[D": backward-char'
 fi
 
-## SANE HISTORY DEFAULTS ##
-
-# Append to the history file, don't overwrite it
-shopt -s histappend
-
-# Save multi-line commands as one command
-shopt -s cmdhist
-
-# Don't record some commands
-export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear:pwd"
-
-# Use standard ISO 8601 timestamp
-# %F equivalent to %Y-%m-%d
-# %T equivalent to %H:%M:%S (24-hours format)
-HISTTIMEFORMAT='%F %T '
-
-
 ## BETTER DIRECTORY NAVIGATION ##
 
 # Prepend cd to directory names automatically
@@ -126,8 +126,6 @@ CDPATH="."
 # This allows you to bookmark your favorite places across the file system
 # Define a variable containing a path and you will be able to cd into it regardless of the directory you're in
 shopt -s cdable_vars
-#********************************* BASH HISTORY ************************************************
-
 
 
 
@@ -169,7 +167,7 @@ fi;
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
 # source other profiles
-for file in ~/.{bash_alias,bash_func,bash_prompt}; do
+for file in ~/.bash/{bash_alias,bash_func,bash_prompt}; do
     [ -r "$file"  ] && [ -f "$file"  ] && source "$file";
 done;
 unset file;
@@ -245,19 +243,6 @@ alias mvn-install='mvn clean install -DskipTests'
 
 
 #***************************************** Tmux ************************************************
-# Automatically Attach tmux in SSH Session  (https://ryanmo.co/2015/05/09/automatically-attach-tmux-in-ssh-session/)
-if [[ "$TMUX" == "" ]] &&
-        [[ "$SSH_CONNECTION" != "" ]]; then
-    # Attempt to discover a detached session and attach
-    # it, else create a new session
-    WHOAMI=$(whoami)
-    if tmux has-session -t $WHOAMI 2>/dev/null; then
-    tmux -2 attach-session -t $WHOAMI
-    else
-        tmux -2 new-session -s $WHOAMI
-    fi
-fi
-
 # enable 256-color terminal on Linux
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
@@ -295,18 +280,16 @@ if [[ $(uname -s) == "Darwin" ]] ; then
     java8() {
         export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && `java -version`
     }
-else
-    export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.121-0.b13.el7_3.x86_64/
-
-    # Switch between Java versions
-    java7() {
-        export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.121-2.6.8.0.el7_3.x86_64/
-    }
-    java8() {
-        export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.121-0.b13.el7_3.x86_64/
-    }
 fi
 
-
-
 #************************************* Hadoop Development **************************************
+
+
+
+
+# For operating systems where the default shell cannot be changed to zsh
+# https://github.com/robbyrussell/oh-my-zsh/issues/5401#issuecomment-250828518
+if [[ $- == *i* ]]; then
+    export SHELL=/usr/bin/zsh
+    exec /usr/bin/zsh -l
+fi

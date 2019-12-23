@@ -22,5 +22,7 @@
     detach = !sh -c 'git checkout $(git rev-parse ${1:-HEAD})' --
     sha1 = !sh -c 'git rev-parse --short ${1:-HEAD}' --
     stash-all = stash save --include-untracked
+    un-amend= reset --soft HEAD@{1}
+
 [status]
     showUntrackedFiles = all

@@ -28,6 +28,7 @@ set backupcopy=yes                 " see :help crontab
 set clipboard=unnamed              " yank and paste with the system clipboard
 set directory-=.                   " don't store swapfiles in current directory
 set encoding=utf-8
+set paste
 
 set expandtab                      " expand tabs to spaces
 set hlsearch
