@@ -18,7 +18,6 @@ filetype plugin indent on
 "******************** setting up vundle *********************************
 
 
-let mapleader = "\<Space>"
 
 set noswapfile                     " turn off swap files"
 
@@ -89,7 +88,8 @@ set shiftwidth=4
 
 
 "************** setting up key mappings *********************************
-let mapleader = ','
+"let mapleader = ','
+let mapleader = "\<Space>"
 
 no <down> <Nop>
 no <left> <Nop>
@@ -167,3 +167,18 @@ function! s:Replace()
   return "p@=RestoreRegister()\<cr>"
 endfunction
 vmap <silent> <expr> p <sid>Replace()
+
+
+
+
+" copy to attached terminal using the yank(1) script:
+" https://github.com/sunaku/home/blob/master/bin/yank
+function! Yank(text) abort
+  let escape = system('yank', a:text)
+  if v:shell_error
+    echoerr escape
+  else
+    call writefile([escape], '/dev/tty', 'b')
+  endif
+endfunction
+noremap <silent> <leader>y y:<C-U>call Yank(@0)<CR>

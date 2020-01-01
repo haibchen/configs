@@ -43,3 +43,5 @@ echo "************************* vscode extensions installed  *******************
 
 
 
+# set up copying into the local clipboard from tmux/vim running remotely over ssh
+sudo mv scripts/yank /usr/local/bin
