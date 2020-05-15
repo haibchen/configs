@@ -33,6 +33,8 @@ brew install fzf
 brew install ag       #grep alternative
 brew install tldr      #man alternative
 brew install source-highlight
+brew install fpp
+
 
 brew install gradle
 brew install maven
