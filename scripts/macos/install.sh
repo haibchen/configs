@@ -61,6 +61,7 @@ brew cask install firefox
 brew cask install slack
 brew cask install alfred
 brew cask install visual-studio-code
+brew cast install typora
 
 brew cask install iterm2
 brew cask install docker
