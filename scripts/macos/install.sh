@@ -71,6 +71,7 @@ brew cask install cheatsheet
 
 # with BTracer and Thread Dump Analyzer
 brew cask install visualvm
+bre cask install mat
 # intellij with the ideavim plugin
 brew cask install intellij-idea-ce
 brew cask install jd-gui
