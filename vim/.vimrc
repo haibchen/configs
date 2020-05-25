@@ -88,8 +88,7 @@ set shiftwidth=4
 
 
 "************** setting up key mappings *********************************
-"let mapleader = ','
-let mapleader = "\<Space>"
+let mapleader = ','
 
 no <down> <Nop>
 no <left> <Nop>
