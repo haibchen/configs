@@ -2,6 +2,7 @@ Plugin 'gmarik/vundle'
 
 " original repos on github
 Plugin 'vim-scripts/Auto-Pairs'
+Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/snipMate'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'ervandew/supertab'
