@@ -42,7 +42,7 @@ set nowrap                         " Disable line wrap-up
 set scrolloff=3                    " show context above/below cursorline
 set shiftwidth=4                   " normal mode indentation use 2 spaces
 set showcmd
-set showmode
+set noshowmode
 set visualbell
 set smartcase                      " case-sensitive search if any caps
 set softtabstop=4                  " insert mode tab and backspace use 2 spaces
