@@ -115,6 +115,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 map <C-n> :NERDTreeToggle<CR>
 
 
+set rtp+=/usr/local/opt/fzf
+
 
 
 "******************** setting up color scheme ***************************
