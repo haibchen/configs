@@ -1,22 +1,18 @@
 Plugin 'gmarik/vundle'
 
 " original repos on github
-Plugin 'vim-scripts/Auto-Pairs'
-Plugin 'itchyny/lightline.vim'
-Plugin 'vim-scripts/snipMate'
-Plugin 'vim-scripts/taglist.vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
+
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'jez/vim-colors-solarized'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'jistr/vim-nerdtree-tabs'
 
-" A whole set of text objects
-" Plugin 'wellle/targets.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+Plugin 'easymotion/vim-easymotion'
+
 
 
 
