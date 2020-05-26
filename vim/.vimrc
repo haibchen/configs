@@ -109,6 +109,11 @@ noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>"
 "************** setting up key mappings *********************************
 
 
+" nerdtree settings
+" close vim if the last open window is nerdtree 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
+
 
 
 
