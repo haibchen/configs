@@ -17,7 +17,7 @@ Plugin 'easymotion/vim-easymotion'
 
 
 " vim-scripts repos
-Plugin 'minibufexpl.vim'
+" Plugin 'minibufexpl.vim'
 
 
 
