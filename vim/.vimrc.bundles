@@ -7,7 +7,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jez/vim-colors-solarized'
-
+Plugin 'junegunn/fzf'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
