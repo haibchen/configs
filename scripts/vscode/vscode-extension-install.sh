@@ -32,3 +32,4 @@ code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension betterthantomorrow.calva
 
 code --install-extension shengchen.vscode-leetcode
+code --install-extension foam for vs code
