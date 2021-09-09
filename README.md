@@ -20,19 +20,16 @@ ag
 visual-studio-code
 
 ## worth mentioning
-tree + mosh + gradle + tldr + alfred + docker + selfcontrol + intellij
+tree + mosh + tldr + alfred + docker + selfcontrol + intellij
 
 
 
 
 # Miscellaneous Tools/Applications
-    # RenrenYingshi Pro
-
     # IFTTT for automated workflow
     # LastPass for password management
 
     # cmd unavailable with brew
-    pomo
     autopack(tar, zip unrar alternative)
 
 
@@ -64,19 +61,20 @@ tree + mosh + gradle + tldr + alfred + docker + selfcontrol + intellij
 # Firefox addons/theme
     Theme: Dark
 
+    Adblocker for Youtube
+    AdNauseam
+    Enhancer for Youtube
+    Facebook Container
+    Git Patch Viewer
+    Hide Google Search Favicons
+    Simplify Gmail
+    Boomerang for Gmail
+
     uBlock Origin
     LastPass
 
     Vimium
     OneTab
     Darker Reader
-    Markdown Here
-    Simplify Gmail
-
-    Enhancer for Youtube
-    Facebook Container
-    Adblocker for Youtube
-
-    Git Patch Viewer
     Refined Github
     GitHub Dark Theme
