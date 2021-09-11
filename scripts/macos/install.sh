@@ -49,8 +49,6 @@ brew install httpie   #curl alternative
 
 # https://www.drinchev.com/blog/ssh-and-terminal-background/ & phook
 brew tap thefox/brewery
-brew install phook
-
 
 brew tap caskroom/cask
 
@@ -71,7 +69,7 @@ brew cask install cheatsheet
 
 # with BTracer and Thread Dump Analyzer
 brew cask install visualvm
-bre cask install mat
+brew cask install mat
 # intellij with the ideavim plugin
 brew cask install intellij-idea-ce
 brew cask install jd-gui
@@ -85,7 +83,6 @@ brew cask install wechat
 brew cask install winds
 brew cask install xmind
 brew cask install caffeine
-brew cask install pock
 brew cask install selfcontrol
 brew cask install karabiner-elements
 brew cask install keyboard-maestro
