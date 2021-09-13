@@ -50,42 +50,38 @@ brew install httpie   #curl alternative
 # https://www.drinchev.com/blog/ssh-and-terminal-background/ & phook
 brew tap thefox/brewery
 
-brew tap caskroom/cask
+brew install the-unarchiver
+brew install vlc
+brew install adobe-reader
+brew install firefox
+brew install alfred
+brew install visual-studio-code
+brew install typora
 
-brew cask install the-unarchiver
-brew cask install vlc
-brew cask install adobe-reader
-brew cask install firefox
-brew cask install slack
-brew cask install alfred
-brew cask install visual-studio-code
-brew cast install typora
+brew install iterm2
+brew install docker
 
-brew cask install iterm2
-brew cask install docker
-
-brew cask install postman
-brew cask install cheatsheet
+brew install postman
+brew install cheatsheet
 
 # with BTracer and Thread Dump Analyzer
-brew cask install visualvm
-brew cask install mat
+brew install visualvm
+brew install mat
 # intellij with the ideavim plugin
-brew cask install intellij-idea-ce
-brew cask install jd-gui
-brew cask install jupyter-notebook-viewer
+brew install intellij-idea-ce
+brew install jd-gui
+brew install jupyter-notebook-viewer
 
 
 brew cask install qlcolorcode qlstephen \
     qlmarkdown  quicklook-json qlimagesize \
     webpquicklook suspicious-package qlvideo
-brew cask install wechat
-brew cask install winds
-brew cask install xmind
-brew cask install caffeine
-brew cask install selfcontrol
-brew cask install karabiner-elements
-brew cask install keyboard-maestro
+brew install wechat
+brew install xmind
+brew install caffeine
+brew install selfcontrol
+brew install karabiner-elements
+brew install keyboard-maestro
 
 
 ## Additional personal apps
