@@ -13,14 +13,15 @@ iterm2
 zsh
 oh-my-zsh
 tmux
-vim/neovim
+nvim/vim
 (git + diff-so-fancy)
 fzf
-ag
+rg/ag
+mosh
 visual-studio-code
 
 ## worth mentioning
-tree + mosh + tldr + alfred + docker + selfcontrol + intellij
+tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij
 
 
 
@@ -67,7 +68,6 @@ tree + mosh + tldr + alfred + docker + selfcontrol + intellij
     Facebook Container
     Git Patch Viewer
     Hide Google Search Favicons
-    Simplify Gmail
     Boomerang for Gmail
 
     uBlock Origin
