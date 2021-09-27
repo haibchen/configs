@@ -78,3 +78,14 @@ tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij
     Darker Reader
     Refined Github
     GitHub Dark Theme
+
+
+# Neovim plugins
+    nvim-treesitter
+    telescope
+    camspiers/snap
+    overcache/NeoSolarized
+    phaazon/hop
+    lightline
+    coc ?
+    
