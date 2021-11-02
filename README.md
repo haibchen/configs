@@ -10,14 +10,13 @@
 
 # Killer Applications/Tools Combo
 iterm2
-zsh
-oh-my-zsh
+zsh + oh-my-zsh
 tmux
 nvim/vim
 (git + diff-so-fancy)
 fzf
-rg/ag
-mosh
+rg (riggrep)
+et (Eternal Terminal)
 visual-studio-code
 
 ## worth mentioning
