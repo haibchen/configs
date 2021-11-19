@@ -20,7 +20,7 @@ et (Eternal Terminal)
 visual-studio-code
 
 ## worth mentioning
-tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij
+tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij + yabai (windown manager)
 
 
 
