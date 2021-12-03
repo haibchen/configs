@@ -87,4 +87,4 @@ tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij + yabai (windo
     phaazon/hop
     lightline
     coc ?
-    
+    which key    
