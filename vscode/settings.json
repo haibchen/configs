@@ -1,4 +1,29 @@
 {
     // see setup instructions for vs code in a remote container
-    "docker.host": "tcp://localhost:23750"
+    // "docker.host": "tcp://localhost:23750"
+    "editor.suggestSelection": "first",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.suggest.showStatusBar": true,
+    
+    "workbench.colorTheme": "Solarized Dark Vim",
+    "workbench.editor.showTabs": false,
+
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+    "editor.minimap.showSlider": "always",
+    
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "iTerm.app",
+
+    "search.showLineNumbers": true,
+
+    "files.autoSave": "afterDelay",
+    "hg.jumpToNextConflictOnSave": "Jump On Save And Open ISL When Done",
+
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
+    "vscode-neovim.logOutputToConsole": true
 }
