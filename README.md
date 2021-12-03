@@ -17,7 +17,7 @@ nvim/vim
 fzf
 rg (riggrep)
 et (Eternal Terminal)
-visual-studio-code
+visual-studio-code (whichkey + vscode-neovim)
 
 ## worth mentioning
 tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij + yabai (windown manager)
