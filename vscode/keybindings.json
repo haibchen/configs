@@ -34,7 +34,7 @@
         "command": "whichkey.show"
     },
     {
-        "key": "cmd+e",
+        "key": "cmd+t",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     },
