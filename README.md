@@ -88,3 +88,4 @@ tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij + yabai (windo
     lightline
     coc ?
     which key    
+    vim-oscyank
