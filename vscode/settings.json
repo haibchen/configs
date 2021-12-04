@@ -25,5 +25,30 @@
 
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
-    "vscode-neovim.logOutputToConsole": true
+    "vscode-neovim.logOutputToConsole": true,
+    
+        "whichkey.bindings": [
+        {
+            "key": "f",
+            "name": "File Explorer",
+            "type": "command",
+            "command": "workbench.files.action.focusFilesExplorer",
+            "when": "!fileExplorerFocus"
+        },
+        {
+            "key": "t",
+            "name": "Toggle Terminal",
+            "type": "command",
+            "command": "workbench.action.togglePanel"
+        },
+        {
+            "key": "e",
+            "name": "Toggle Explore Sidebar",
+            "type": "command",
+            "command": "workbench.action.toggleSidebarVisibility"
+        },
+    ],
+    "workbench.activityBar.visible": false,
+    "editor.fontSize": 13,
+    "editor.semanticHighlighting.enabled": true
 }
