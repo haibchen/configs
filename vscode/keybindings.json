@@ -30,7 +30,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
     },
     {
-        "key": "ctrl+a",
+        "key": "cmd+z",
         "command": "whichkey.show"
     },
     {
