@@ -96,3 +96,7 @@ xcode-select —-install
 echo "************************* development tools installed **************************************"
 
 popd
+
+
+# set maximum time block for selfcontrol to 1 month
+# defaults write org.eyebeam.SelfControl MaxBlockLength -int 43200
