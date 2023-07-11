@@ -83,6 +83,7 @@ brew install selfcontrol
 brew install karabiner-elements
 brew install keyboard-maestro
 
+brew install linearmouse
 
 ## Additional personal apps
 # brew cask install gimp utorrent
