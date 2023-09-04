@@ -32,6 +32,10 @@ tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij + yabai (windo
     # cmd unavailable with brew
     autopack(tar, zip unrar alternative)
 
+    # Amphetamine
+    # HomeRow
+    # LinearMouse
+
 
 # Alfred Workflows
     deanishe/alfred-fixum (fix issues with alfred 3 and Mac OS Mojave)
