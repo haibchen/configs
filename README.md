@@ -13,21 +13,22 @@ iterm2
 zsh + oh-my-zsh
 tmux
 nvim/vim
-(git + diff-so-fancy)
+git (& diff-so-fancy)
 fzf
 rg (riggrep)
+autojump
 et (Eternal Terminal)
 visual-studio-code (whichkey + vscode-neovim)
 
-## worth mentioning
-tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij + yabai (windown manager) + Amphetamine
+## honorable mention
+tree + tldr + fpp + jq + fd + alfred + docker + SelfControl + intellij + yabai (windown manager) + Amphetamine + asciinema (terminal recording)
 
 
 
 
 # Miscellaneous Tools/Applications
     # IFTTT for automated workflow
-    # LastPass for password management
+    # Bitbucket
 
     # cmd unavailable with brew
     autopack(tar, zip unrar alternative)
@@ -36,31 +37,6 @@ tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij + yabai (windo
     # HomeRow
     # LinearMouse
 
-
-# Alfred Workflows
-    deanishe/alfred-fixum (fix issues with alfred 3 and Mac OS Mojave)
-
-    paulsri/alfred-caffeinate #Caffeinate Control
-    ravelll/wifi-workflow
-    workflow/volume-control
-    Ketouem/fullscreen-app-alfred-workflow
-
-    isometry/alfred-ssh      #https://ma.ttias.be/set-iterm2-default-ssh-handler-mac-osx/
-    xilopaint/alfred-pdf-tools
-    yannickglt/alfred-slack
-    bchatard/jetbrains-alfred-workflow #Jetbrains
-    iamstevendao/alfred-open-with-vscode
-
-    Google Calendar/Outlook Calendar
-
-    willfarrell/alfred-pkgman-workflow
-    workflow/simple-timer
-    workflow/newdesktop
-
-    cs1707/tldr-alfred
-    nikitavoloboev/alfred-awesome-lists
-
-    #https://ryanmo.co/2014/11/15/a-better-show-downloads-folder-with-alfred/
 
 # Firefox addons/theme
     Theme: Dark
@@ -74,7 +50,7 @@ tree + tldr + fpp + jq + alfred + docker + selfcontrol + intellij + yabai (windo
     Boomerang for Gmail
 
     uBlock Origin
-    LastPass
+    Bitbucket
 
     Vimium
     OneTab
