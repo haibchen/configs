@@ -1,6 +1,8 @@
 {
     // "docker.host": "tcp://localhost:23750"     // see setup instructions for vs code in a remote container
-    "search.showLineNumbers": true,
+    //"terminal.integrated.sendkeybindingstoshell": true 
+    
+    
     "editor.fontSize": 13,
     "editor.semanticHighlighting.enabled": true,
     "editor.suggestSelection": "first",
@@ -11,51 +13,79 @@
     "editor.minimap.showSlider": "always",
     "editor.suggest.insertMode": "replace",
     "editor.suggest.showStatusBar": true,
+    "editor.inlinesuggest.allowsuggestontriggercharacters": true,
+    "editor.accessibilitysupport": "off",
+
+    "workbench.colortheme": "solarized dark",
+    "workbench.startupeditor": "none",    
     "workbench.activityBar.visible": false,
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": false, 
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.showtabs": false,
+
+
     "files.autoSave": "afterDelay",
-    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-    "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/vscode-init.vim",
-    "vscode-neovim.logOutputToConsole": true,
+    "window.restorewindows": "none",
+    "search.showLineNumbers": true,
+
+    
+    "vscode-neovim.neovimexecutablepaths.darwin": "/usr/local/bin/nvim",
+    "vscode-neovim.neoviminitvimpaths.darwin": "$home/.config/nvim/init.lua",
+    "vscode-neovim.logoutputtoconsole": true,
+    
     "whichkey.bindings": [
         {
-            "key": "s",
-            "name": "BigGrep Search",
-            "type": "command",
-            "command": "omni-search-ui:quick-search-biggrep"
-        },
-        {
             "key": "d",
-            "name": "Uncommitted changes",
+            "name": "show uncommitted changes",
             "type": "command",
             "command": "fb-hg.diff"
         },
         {
             "key": "l",
-            "name": "Show/Hide Tnterative SmartLog",
+            "name": "show/hide tnterative smartlog",
             "type": "command",
             "command": "fb-hg.toggle-interactive-smartlog"
         },
         {
             "key": "f",
-            "name": "File Explorer",
+            "name": "focus on file explorer",
             "type": "command",
-            "command": "workbench.files.action.focusFilesExplorer",
-            "when": "!fileExplorerFocus"
+            "command": "workbench.files.action.focusfilesexplorer",
+            "when": "!fileexplorerfocus"
         },
         {
             "key": "t",
-            "name": "Toggle Terminal",
+            "name": "toggle terminal",
             "type": "command",
-            "command": "workbench.action.togglePanel"
+            "command": "workbench.action.togglepanel"
         },
         {
             "key": "e",
-            "name": "Toggle Explore Sidebar",
+            "name": "toggle explore sidebar",
             "type": "command",
-            "command": "workbench.action.toggleSidebarVisibility"
+            "command": "workbench.action.togglesidebarvisibility"
         },
+        {
+            "key": "g",
+            "name": "open a biggrep pane",
+            "type": "command",
+            "command": "nuclide-biggrep:open-pane"
+        },
+        {
+            "key": "c",
+            "name": "open in codehub",
+            "type": "command",
+            "command": "fb-phabricator-diffusion:openincodehub",
+        },
+        {
+            "key": "o",
+            "name": "open omni-search",
+            "type": "command",
+            "command": "omni-search-ui:quick-search",
+        }
     ],
+    
+    
     "terminal.integrated.profiles.linux": {
         "tmux": {
             "path": "/usr/bin/tmux",
@@ -71,6 +101,5 @@
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.defaultProfile.osx": "tmux",
-    "workbench.colorTheme": "Solarized Dark",
-    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.enablemultilinepastewarning": false,
 }
