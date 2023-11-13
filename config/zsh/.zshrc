@@ -5,6 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="avit"
+echo $PWD
 
 
 DISABLE_AUTO_UPDATE="true"
@@ -87,12 +88,22 @@ export LESS=" -R "
 
 
 
+# https://antistatique.net/en/we/blog/2016/08/03/macos-trigger-notification-center-when-long-running-commands-finishes
+
 # enable notifications with Mac OS for long running commands
 # assuming an osascript named 'notify' is available in PATH
 function f_notifyme {
   LAST_EXIT_CODE=$?
   CMD=$(fc -ln -1)
   # No point in waiting for the command to complete
-  notifyme "$CMD" "$LAST_EXIT_CODE" &
+  ~/.config/zsh/notifyme "$CMD" "$LAST_EXIT_CODE" &
 }
 export PS1='$(f_notifyme)'$PS1
+
+
+# disable .lesshst file
+export LESSHISTFILE=-
+
+alias vim=nvim
+
+alias tree=tree -a

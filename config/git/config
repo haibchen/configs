@@ -2,7 +2,7 @@
     name = Haibo Chen
     email = haibochen@apache.org
 [core]
-    excludesfile = ~/.gitignore
+    excludesfile = ~/.config/git/.gitignore
     whitespace = space-before-tab,-indent-with-non-tab,trailing-space
     editor = vim
     pager = less -FRX

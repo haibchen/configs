@@ -10,11 +10,6 @@ fi
 
 pushd ~
 
-# install homebrew first
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-
-
 
 echo "************************* installing development tools ***********************************"
 brew update
@@ -23,7 +18,6 @@ brew install zsh
 brew install tmux
 brew install git
 brew install diff-so-fancy
-brew install vim
 brew install neovim
 brew install reattach-to-user-namespace
 brew install wget
@@ -31,20 +25,13 @@ brew install tree
 brew install jq
 brew install fzf
 brew install ag       #grep alternative
-brew install tldr      #man alternative
-brew install source-highlight
-brew install fpp
+brew install rg       #grep alternative
+brew install autojump
+brew install tldr     #man alternative
+brew install fpp      #path picker
 brew install cloc
-
-
-brew install gradle
-brew install maven
-
-brew install sshrc #ssh with local conf
-brew install bat
-brew install mosh      #ssh alternative
-brew install cheat
 brew install httpie   #curl alternative
+brew install MisterTea/et/et       #ssh
 
 
 # https://www.drinchev.com/blog/ssh-and-terminal-background/ & phook
@@ -56,38 +43,39 @@ brew install adobe-reader
 brew install firefox
 brew install alfred
 brew install visual-studio-code
-brew install typora
-
-brew install iterm2
 brew install docker
-
-brew install postman
+brew install iterm2
 brew install cheatsheet
 
-# with BTracer and Thread Dump Analyzer
-brew install visualvm
-brew install mat
-# intellij with the ideavim plugin
-brew install intellij-idea-ce
-brew install jd-gui
-brew install jupyter-notebook-viewer
-
-
-brew cask install qlcolorcode qlstephen \
-    qlmarkdown  quicklook-json qlimagesize \
-    webpquicklook suspicious-package qlvideo
+# brew install amphetamine # install manually from app store
 brew install wechat
-brew install xmind
-brew install caffeine
 brew install selfcontrol
 brew install karabiner-elements
 brew install keyboard-maestro
-
 brew install linearmouse
 
-## Additional personal apps
-# brew cask install gimp utorrent
-# Renren Yingshi Pro
+
+# with BTracer and Thread Dump Analyzer
+
+# brew install visualvm
+# brew install typora
+# brew install mat
+# intellij with the ideavim plugin
+# brew install intellij-idea-ce
+# brew install jd-gui
+# brew install jupyter-notebook-viewer
+# brew install xmind
+
+# brew install gradle
+# brew install maven
+# brew install source-highlight
+# brew install sshrc #ssh with local conf
+# brew install bat
+# brew install mosh      #ssh alternative
+# brew install cheat
+
+# brew install gimp utorrent # Renren Yingshi Pro
+
 
 brew cleanup
 
@@ -100,4 +88,4 @@ popd
 
 
 # set maximum time block for selfcontrol to 1 month
-# defaults write org.eyebeam.SelfControl MaxBlockLength -int 43200
+defaults write org.eyebeam.SelfControl MaxBlockLength -int 43200

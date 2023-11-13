@@ -8,8 +8,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-if filereadable(expand("~/.vimrc.bundles"))
-    source ~/.vimrc.bundles
+if filereadable(expand("~/.vim/.vimrc.bundles"))
+    source ~/.vim/.vimrc.bundles
 endif
 call vundle#end()
 
@@ -84,6 +84,8 @@ set expandtab
 set shiftwidth=4
 
 
+
+set viminfo+=n~/.vim/.viminfo
 
 
 
