@@ -67,10 +67,10 @@
           "args": ["new-session", "-A", "-s", "vscode:${workspaceFolder}"]
         }
     },
-    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.linux": "tmux",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.osx": "tmux",
     "terminal.integrated.systemd.shouldUse": true,
 
     "window.zoomLevel": 2,
