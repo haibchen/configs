@@ -69,7 +69,8 @@ require("lazy").setup({
     tag = '0.1.4',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
-  {'ggandor/leap.nvim'}
+  {'ggandor/leap.nvim'},
+  {'ojroques/nvim-osc52'}
 })
 
 require('leap').add_default_mappings()
