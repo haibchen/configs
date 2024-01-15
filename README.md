@@ -24,7 +24,12 @@ visual-studio-code (whichkey + vscode-neovim)
 tree + tldr + fpp + jq + fd + alfred + docker + SelfControl + intellij + yabai (windown manager) + Amphetamine + asciinema (terminal recording)
 
 
-Note: for clipboard integration amongs nvim, tmux etc. see https://github.com/ojroques/nvim-osc52 and https://news.ycombinator.com/item?id=32037489 and https://gronskiy.com/posts/2023-03-26-copy-via-vim-tmux-ssh/
+
+## cliboard integration
+* https://github.com/ojroques/nvim-osc52 and 
+* https://news.ycombinator.com/item?id=32037489
+* https://gronskiy.com/posts/2023-03-26-copy-via-vim-tmux-ssh/
+* vscode integrated terminal does not support it: https://github.com/xtermjs/xterm.js/issues/3260
 
 
 # Miscellaneous Tools/Applications
