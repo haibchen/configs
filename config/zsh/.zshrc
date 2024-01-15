@@ -88,17 +88,23 @@ export LESS=" -R "
 
 
 
-# https://antistatique.net/en/we/blog/2016/08/03/macos-trigger-notification-center-when-long-running-commands-finishes
+if [[ $(uname) == "Darwin" ]]; then
+    # https://antistatique.net/en/we/blog/2016/08/03/macos-trigger-notification-center-when-long-running-commands-finishes
 
-# enable notifications with Mac OS for long running commands
-# assuming an osascript named 'notify' is available in PATH
-function f_notifyme {
-  LAST_EXIT_CODE=$?
-  CMD=$(fc -ln -1)
-  # No point in waiting for the command to complete
-  ~/.config/zsh/notifyme "$CMD" "$LAST_EXIT_CODE" &
-}
-export PS1='$(f_notifyme)'$PS1
+    # enable notifications with Mac OS for long running commands
+    # assuming an osascript named 'notify' is available in PATH
+    function f_notifyme {
+      LAST_EXIT_CODE=$?
+      CMD=$(fc -ln -1)
+      # No point in waiting for the command to complete
+      ~/.config/zsh/notifyme "$CMD" "$LAST_EXIT_CODE" &
+    }
+    export PS1='$(f_notifyme)'$PS1
+
+    function notifyme_os {
+      ~/.config/zsh/notifyme $1
+    }
+fi
 
 
 # disable .lesshst file
