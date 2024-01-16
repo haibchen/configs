@@ -1,6 +1,8 @@
 [user]
     name = Haibo Chen
     email = haibochen@apache.org
+
+
 [core]
     excludesfile = ~/.config/git/.gitignore
     whitespace = space-before-tab,-indent-with-non-tab,trailing-space
@@ -26,3 +28,17 @@
 
 [status]
     showUntrackedFiles = all
+
+
+[url "https://github.com/"]
+        insteadOf = git://github.com/
+
+[http]
+  proxy = fwdproxy:8080
+  proxySSLCert=/var/facebook/credentials/haibochen/x509/haibochen.pem
+  proxySSLKey=/var/facebook/credentials/haibochen/x509/haibochen.pem
+
+[https]
+  proxy = fwdproxy:8080
+  proxySSLCert=/var/facebook/credentials/haibochen/x509/haibochen.pem
+    proxySSLKey=/var/facebook/credentials/haibochen/x509/haibochen.pem
