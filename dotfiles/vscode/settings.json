@@ -1,8 +1,62 @@
 {
-    // "docker.host": "tcp://localhost:23750"     // see setup instructions for vs code in a remote container
-    
+    "interactive-smartlog.pull": "arc pull",
+    "interactive-smartlog.fetch": "jf get",
+    "interactive-smartlog.right-drawer-width": 992,
+    "interactive-smartlog.bottom-drawer-height": 500,
+    "interactive-smartlog.autoRunMergeDrivers": true,
+    "[cpp]": {
+        "editor.defaultFormatter": "nuclide.cpp"
+    },
+    "fb.ms-remote-connections.hosts": [],
+    "fb.ms-remote-connections.odtypes": [
+        {
+            "type": "ondemand_fbcode",
+            "flavor": "default",
+            "folders": [
+                "/data/sandcastle/boxes/fbsource/"
+            ]
+        },
+        {
+            "type": "ondemand_configerator",
+            "flavor": "default",
+            "folders": []
+        },
+        {
+            "type": "ondemand_www",
+            "flavor": "default",
+            "folders": []
+        },
+        {
+            "type": "ondemand_dataswarm",
+            "flavor": "default",
+            "folders": []
+        },
+        {
+            "type": "ondemand_bento",
+            "flavor": "default",
+            "folders": []
+        },
+        {
+            "type": "ondemand_bento",
+            "flavor": "bento_passwordless",
+            "folders": []
+        },
+        {
+            "type": "ondemand_fbcode",
+            "flavor": "de",
+            "folders": []
+        },
+        {
+            "type": "ondemand_gpu",
+            "flavor": "default",
+            "folders": []
+        }
+    ],
+    "omnisearch.resultLimit": 20,
+    "hg.jumpToNextConflictOnSave": "Jump On Save And Open ISL When Done",
+
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-    "vscode-neovim.neovimInitVimPaths.darwin": "$home/.config/nvim/init.lua",
+    "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua",
     "vscode-neovim.logOutputToConsole": true,
     "whichkey.bindings": [
         {
@@ -21,20 +75,20 @@
             "key": "f",
             "name": "focus on file explorer",
             "type": "command",
-            "command": "workbench.files.action.focusfilesexplorer",
+            "command": "workbench.files.action.focusFilesExplorer",
             "when": "!fileexplorerfocus"
         },
         {
             "key": "t",
             "name": "toggle terminal",
             "type": "command",
-            "command": "workbench.action.togglepanel"
+            "command": "workbench.action.togglePanel"
         },
         {
             "key": "e",
             "name": "toggle explore sidebar",
             "type": "command",
-            "command": "workbench.action.togglesidebarvisibility"
+            "command": "workbench.action.toggleSideBarVisibility"
         },
         {
             "key": "g",
@@ -46,7 +100,7 @@
             "key": "c",
             "name": "open in codehub",
             "type": "command",
-            "command": "fb-phabricator-diffusion:openincodehub",
+            "command": "fb-phabricator-diffusion:openInCodeHub",
         },
         {
             "key": "o",
@@ -86,15 +140,21 @@
     "editor.lineNumbers": "relative",
     "editor.suggestSelection": "first",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
-    "editor.tabSize": 2,
-   
+
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Solarized Dark",
     "workbench.editor.showTabs": false,
-    "workbench.activityBar.visible": false,
-    "workbench.iconTheme": "material-icon-theme",
-
-    //"terminal.integrated.sendkeybindingstoshell": true
-
+    "wasabi.interactiveDevelopment.introMessageNumTimesShown": 10,
+    "wasabi.interactiveDevelopment.disableIntroMessage": true,
+    "arcinfer.runOnSave": true,
+    "meta.global.history.enabled": true,
+    "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
+    "window.restoreWindows": "none",
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.scrollback": 100000,
 }
+
+
