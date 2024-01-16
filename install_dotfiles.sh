@@ -2,6 +2,6 @@
 
 
 mkdir -p ~/.config/
-ln -sf ~/.zshenv config/zsh/.zshenv
+ln -sf dotfiles/zsh/.zshenv ~/.zshenv 
 
-ln -s ~/.config config/
+ln -sf dotfiles/ ~/.config 
