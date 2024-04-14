@@ -42,7 +42,7 @@ ENABLE_CORRECTION="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(fzf sudo z zsh-autosuggestions zsh-syntax-highlighting brew tmux git mosh)
+plugins=(fzf sudo z zsh-autosuggestions   zsh-completions zsh-syntax-highlighting brew tmux git mosh)
 
 # execute this to fix the auto suggestion showing one character issue
 #echo ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=\'fg=60\' >> $ZSH_CUSTOM/zsh-autosuggestions_custom.zsh
