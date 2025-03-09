@@ -58,19 +58,19 @@
     "terminal.integrated.profiles.linux": {
         "tmux-shell": {
           "path": "tmux",
-          "args": ["new-session", "-A", "-s", "vscode:${workspaceFolder}"]
+          "args": ["new-session", "-A", "-s", "vscode:${workspaceFolder}", "/bin/zsh"]
         }
     },
     "terminal.integrated.profiles.osx": {
         "tmux-shell": {
           "path": "tmux",
-          "args": ["new-session", "-A", "-s", "vscode:${workspaceFolder}"]
+          "args": ["new-session", "-A", "-s", "vscode:${workspaceFolder}", "/bin/zsh"]
         }
     },
-    "terminal.integrated.defaultProfile.linux": "tmux",
+    "terminal.integrated.defaultProfile.linux": "tmux-shell",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.defaultProfile.osx": "tmux",
+    "terminal.integrated.defaultProfile.osx": "tmux-shell",
     "terminal.integrated.systemd.shouldUse": true,
 
     "window.zoomLevel": 2,
