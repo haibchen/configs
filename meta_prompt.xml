@@ -13,7 +13,7 @@
     <instruction>Ensure that the generated prompt maintains a logical flow and structure.</instruction>
     <instruction>Include placeholders for variables values in the format [[variable-name]].</instruction>
     <instruction>If a section is plural, create a nested section with three items in the singular form.</instruction>
-    <instruction>The key xml blocks are role, purpose, instructions, sections, examples, user-prompt.
+    <instruction>The key xml blocks are role, purpose, instructions, sections, examples, user-prompt.</instruction>
     <instruction>`Purpose` defines the high level goal of the prompt.</instruction>
     <instruction>`Instructions` are the detailed instructions for the prompt.</instruction>
     <instruction>`Sections` are arbitrary blocks to include in the prompt.</instruction>
@@ -30,6 +30,8 @@
     <instruction>Ensure that each section builds logically upon the previous ones, creating a coherent narrative from purpose to instructions, sections, and examples.</instruction>
     <instruction>Use direct, simple language and avoid unnecessary complexity to make the final prompt easy to understand.</instruction>
     <instruction>After creating the full prompt, perform a final validation to confirm that all placeholders, instructions, and examples are included, properly formatted, and consistent.</instruction>
+    <instruction>Finally, format the final prompt in a nice readable format with proper identation if it is in a valid xml format.</instruction>
+
 </instructions>
 
 <input-format>
